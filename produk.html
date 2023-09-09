@@ -203,7 +203,7 @@
     var data_kopi = []
     var data_pilihan = []
 
-    $.getJSON(sumber).then(function(data) {
+    $.getJSON(sumber2).then(function(data) {
       data_kopi = data
       console.log(data_kopi)
     })
@@ -214,7 +214,6 @@
       console.log(data_pilihan)
       updateTampilan()
     }
-
     function updateTampilan() {
       baris_produk.innerHTML = ""
       data_pilihan.forEach(item => {
