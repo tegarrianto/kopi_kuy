@@ -14,8 +14,22 @@
   <script src="js/jquery-3.6.3.min.js"></script>
   <style>
     /* tulis kode CSS internal di bawah sini */
+    @font-face {
 
+      font-family: 'Galins';
 
+      font-style: normal;
+      font-weight: 400;
+      src: url(../fonts/Galins.woff2);
+    }
+
+    h1,
+    h2 {
+      font-family: 'Galins';
+    }
+p {
+  font-family: 'poppins'
+}
 
     /* Batas Akhir penulisan kode CSS internal */
   </style>
@@ -215,6 +229,7 @@
       console.log(data_pilihan)
       updateTampilan()
     }
+
     function updateTampilan() {
       baris_produk.innerHTML = ""
       data_pilihan.forEach(item => {
@@ -231,7 +246,7 @@
                                     ${item.harga}
                                 </div>
                             </div>
-                            <a href="${item.link}" class="btn btn-success w-100"><i class="bi bi-basket"></i> Beli</a>
+                            <a href="${item.link}" class="btn btn-primary w-100"><i class="bi bi-basket"></i> Beli</a>
                         </div>
                     </div>
                 </div>`
